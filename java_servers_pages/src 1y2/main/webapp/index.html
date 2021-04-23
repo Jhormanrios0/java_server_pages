@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Taller java</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <script>
+        function solonumeros(event) {
+        if(event.charCode >= 48 && event.charCode <= 57){
+        return true;
+        }else{
+        alert("Solo se aceptan caracteres numericos");
+        return false;
+}
+}
+        </script>
+        
+    </head>
+    <body>
+         <form action="Servlet1"  method="get" onkeypress='return solonumeros(event)'required/>
+             <p>Digite un numero para elevarlo al cubo</p>
+             <input type="number" id="al_cuadrado" name="al_cuadrado" required>
+            
+             
+            
+            <p>Digite el Cateto A</p>
+            <input type="number" id="hipotenusa1" name="hipotenusa1" required>
+            <p>Digite el Cateto B</p>
+            <input type="number" id="hipotenusa2" name="hipotenusa2" required>
+            <input type="submit" value="Calcular" id="button">
+        
+                 </form>
+    </body>
+    <!-- 
+    Alejandro Rafael Reyes Arboleda
+    Jhorman David Rodriguez Rios
+    -->
+</html>
